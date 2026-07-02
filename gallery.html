@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Галерея работ — ELVIRAILINA MAKEUP">
+  <title>ELVIRAILINA MAKEUP — Галерея</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-name" data-site="site.logoName">Elvira Ilina</span>
+        <span class="header__logo-tag" data-site="site.logoTag">makeup & hair</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="gallery.html" class="nav__link nav__link--active">Галерея</a>
+        <a href="contact.html" class="nav__link">Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">Галерея</h1>
+        <p class="page-subtitle">Работы по направлениям — nude, commercial, creative, hair</p>
+        <p class="gallery-count" id="galleryCount"></p>
+        <div class="gallery-filters" id="galleryFilters">
+          <button class="gallery-filter gallery-filter--active" data-filter="all">Все</button>
+          <button class="gallery-filter" data-filter="nude" id="nude">Nude</button>
+          <button class="gallery-filter" data-filter="commercial" id="commercial">Commercial</button>
+          <button class="gallery-filter" data-filter="creative" id="creative">Creative</button>
+          <button class="gallery-filter" data-filter="hair" id="hair">Hair</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gallery">
+      <div class="container">
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy" data-site="footer.copyright">© ELVIRAILINA MAKEUP</p>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Instagram" data-site-href="footer.instagramUrl">Instagram</a>
+        <a href="#" class="footer__social-link" aria-label="Telegram" data-site-href="footer.telegramUrl">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="js/site-content.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/gallery-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

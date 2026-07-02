@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Эльвира Ильина — визажист и стилист по волосам в Москве." data-site-attr="site.metaDescription|content">
+  <title>ELVIRAILINA MAKEUP — Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-name" data-site="site.logoName">Elvira Ilina</span>
+        <span class="header__logo-tag" data-site="site.logoTag">makeup & hair</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link nav__link--active">Главная</a>
+        <a href="gallery.html" class="nav__link">Галерея</a>
+        <a href="contact.html" class="nav__link">Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__media split__media split__media--hero">
+          <img src="images/hero.png" alt="Креативный макияж и образ — ELVIRAILINA MAKEUP" loading="eager" data-site-attr="home.heroImage|src" data-site-alt="home.heroAlt">
+        </div>
+        <div class="hero__content prose">
+          <p class="hero__eyebrow" data-site="home.eyebrow">Визажист · Москва</p>
+          <h1 class="hero__title" data-site-title>Makeup<br><span>& Hair</span></h1>
+          <p data-site="home.intro1">Меня зовут Эльвира Ильина, я визажист и стилист по волосам с опытом 3 года.</p>
+          <p data-site="home.intro2">Работаю с частными клиентами, на съёмках, показах, свадьбах и коммерческих проектах. Делаю макияж любой сложности, укладки, создаю образы для фото и видео.</p>
+          <p><a class="text-link" href="gallery.html">Смотреть работы →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container split split--reverse">
+        <div class="split__text prose">
+          <h2 class="block-title">Портфолио</h2>
+          <ul class="portfolio-categories" data-portfolio-categories></ul>
+        </div>
+        <div class="split__media split__media--framed split__media--video">
+          <img src="images/portfolio-second.png" alt="Работа визажиста — ELVIRAILINA MAKEUP" loading="lazy" data-site-attr="home.portfolioImage|src" data-site-alt="home.portfolioAlt">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="skills-block prose">
+          <h2 class="block-title" data-site="home.skillsTitle">Навыки</h2>
+          <p data-site="home.skillsText">Коммерческий макияж для рекламы, кампейнов и съёмок. Креативный макияж для показов, редакционных съёмок и арт-проектов. Работа с волосами: укладки и образы под задачу.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy" data-site="footer.copyright">© ELVIRAILINA MAKEUP</p>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Instagram" data-site-href="footer.instagramUrl">Instagram</a>
+        <a href="#" class="footer__social-link" aria-label="Telegram" data-site-href="footer.telegramUrl">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site-content.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
